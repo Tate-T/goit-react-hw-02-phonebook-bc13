@@ -11,6 +11,9 @@
 }
 
 .contactsList {
+    background-color: white;
+    border: 1px solid indigo;
+    border-radius: 5px;
     text-align:justify;
 }
 
@@ -18,7 +21,6 @@
 color: rgb(91, 39, 128);
 font-style: italic;
 font-size: 25px;
-font-weight: bold;
 text-shadow: 15px 15px 15px rgb(253, 218, 253);
 margin-bottom: 10px;
 }
