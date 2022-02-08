@@ -1,6 +1,6 @@
 .contactsSection {
-    margin: 0 auto;
     width: 400px;
+    margin-left: 50px;
 }
 
 .contactsTitle {
@@ -14,7 +14,7 @@
     background-color: white;
     border: 1px solid indigo;
     border-radius: 5px;
-    text-align:justify;
+    text-align: start;
 }
 
 .contactsItem {
