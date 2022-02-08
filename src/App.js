@@ -7,11 +7,21 @@ class App extends Component {
   state = {
     contacts: [],
     name: '',
+    number: ''
   }
+
+  handleInputChange = (e) => {
+    this.setState({ [e.currentTarget.name]: e.currentTarget.value });
+  }
+
+  // handleSubmit = () => {
+  //   e.preventDefault()
+
+  // }
 
   render() {
     return (
-      <Form />
+      <Form contacts={this.state.contacts} name={this.state.name} number={this.state.number} onSubmit={this.handleSubmit} onChange={this.handleInputChange} />
     );
   }
 }

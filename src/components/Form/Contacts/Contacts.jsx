@@ -1,17 +1,16 @@
 import s from './Contacts.module.css';
 
-const Contacts = () => {
+const Contacts = ({ contacts }) => {
     return (
         <div className={s.contactsSection}>
             <h2 className={s.contactsTitle}>Contacts:</h2>
-            <ul className={s.contactsList}>
-                <li className={s.contactsItem}>
-                    nametnrtnjtrjn
-                </li>
-                <li className={s.contactsItem}>
-                    nameetjnzenhetzn
-                </li>
-            </ul>
+            {contacts.map(contact => (
+                <ul className={s.contactsList}>
+                    <li className={s.contactsItem}>
+                        {contact}
+                    </li>
+                </ul>
+            ))}
         </div>
     )
 }
