@@ -18,9 +18,6 @@ const Phonebook = ({ name, number, onSubmit, onChange }) => {
                             onChange={onChange}
                         />
                     </label>
-                    <button onSubmit={onSubmit}>Add contact</button>
-                </div>
-                <div className={s.phonebookForm}>
                     <label className={s.title}>Number
                         <input
                             type="tel"
@@ -33,8 +30,8 @@ const Phonebook = ({ name, number, onSubmit, onChange }) => {
                             onChange={onChange}
                         />
                     </label>
-                    <button onSubmit={onSubmit}>Add contact</button>
                 </div>
+                <button type="submit">Add contact</button>
             </div >
         </div>
     )
