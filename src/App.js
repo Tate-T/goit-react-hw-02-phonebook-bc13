@@ -1,11 +1,19 @@
+import { Component } from 'react';
+import Form from './components/Form/Form';
+// import uuid from 'uuid';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  state = {
+    contacts: [],
+    name: '',
+  }
 
-    </div>
-  );
+  render() {
+    return (
+      <Form />
+    );
+  }
 }
 
 export default App;
