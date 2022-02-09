@@ -4,10 +4,10 @@
 }
 
 .contactsTitle {
-        font-size: 40px;
-        color: rgb(38, 17, 53);
-        text-shadow: 5px 5px 5px indigo;
-        font-style: italic;
+    font-size: 40px;
+    color: rgb(38, 17, 53);
+    text-shadow: 5px 5px 5px indigo;
+    font-style: italic;
 }
 
 .contactsList {
@@ -15,6 +15,7 @@
     border: 1px solid indigo;
     border-radius: 5px;
     text-align: start;
+    list-style: square;
 }
 
 .contactsItem {
@@ -23,10 +24,7 @@ color: rgb(91, 39, 128);
 font-style: italic;
 font-size: 18px;
 text-shadow: 15px 15px 15px rgb(253, 218, 253);
-}
-
-.contactsItem:nth-child(1) {
-    margin-top: 10px;
+align-items: center;
 }
 
 .deleteBtn {

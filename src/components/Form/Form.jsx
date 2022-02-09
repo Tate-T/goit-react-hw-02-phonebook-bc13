@@ -32,7 +32,7 @@ class Form extends Component {
         return (
             <form onSubmit={this.onSubmit}>
                 <h1>Phonebook</h1>
-                <div className={s.phonebookSection}>
+                <div>
                     <div className={s.phonebookForm}>
                         <label className={s.title}>Name
                             <input
