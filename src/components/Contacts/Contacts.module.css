@@ -15,23 +15,25 @@
     border: 1px solid indigo;
     border-radius: 5px;
     text-align: start;
-    list-style: square;
 }
 
 .contactsItem {
     display: flex;
-color: rgb(91, 39, 128);
-font-style: italic;
-font-size: 18px;
-text-shadow: 15px 15px 15px rgb(253, 218, 253);
-align-items: center;
+    color: rgb(91, 39, 128);
+    font-style: italic;
+    font-size: 18px;
+    text-shadow: 15px 15px 15px rgb(253, 218, 253);
+    align-items: center;
+}
+
+.contactName {
+    margin: 12px 0;
 }
 
 .deleteBtn {
     display: block;
-    height: 40px;
+    height: 35px;
     font-size: 16px;
-    padding: 10px;
     color:  rgb(253, 218, 253);
     background-color: indigo;
     border-radius: 5px;

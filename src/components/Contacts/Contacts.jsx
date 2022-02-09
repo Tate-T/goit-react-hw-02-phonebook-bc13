@@ -8,7 +8,7 @@ const Contacts = ({ findContact, deleteContact }) => {
             <ul className={s.contactsList} >
                 {findContact().map(contact => (
                     <li className={s.contactsItem} key={contact.id}>
-                        <p>{contact.name}: {contact.number}</p>
+                        <p className={s.contactName}>{contact.name}: {contact.number}</p>
                         <button type="button" className={s.deleteBtn} id={contact.id} onClick={deleteContact}>
                             Delete
                         </button>
