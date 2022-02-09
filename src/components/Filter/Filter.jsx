@@ -1,7 +1,7 @@
 
 import s from './Filter.module.css';
 
-const Filter = (id, filter, addToFilterState) => {
+const Filter = ({ filter, addToFilterState }) => {
 
     return (
         <div className={s.filter}>
@@ -10,7 +10,7 @@ const Filter = (id, filter, addToFilterState) => {
                 <input
                     type="text"
                     name="filter"
-                    value=""
+                    value={filter}
                     onChange={addToFilterState}
                     className={s.filterInput}
                 />

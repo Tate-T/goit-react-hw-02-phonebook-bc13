@@ -1,12 +1,12 @@
 import { Component } from 'react';
-import Form from './components/Form/Form';
+import Phonebook from './components/Phonebook/Phonebook';
 
 
 class App extends Component {
 
   render() {
     return (
-      <Form findContact={this.findContact} />
+      <Phonebook findContact={this.findContact} />
     );
   }
 }
