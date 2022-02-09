@@ -1,18 +1,28 @@
+import PropTypes from 'prop-types';
 import s from './Contacts.module.css';
 
-const Contacts = ({ contacts }) => {
+const Contacts = ({ findContact, deleteContact }) => {
     return (
         <div className={s.contactsSection}>
             <h2 className={s.contactsTitle}>Contacts:</h2>
-            {contacts.map(contact => (
-                <ul className={s.contactsList}>
-                    <li className={s.contactsItem}>
-                        {contact}
+            <ul className={s.contactsList} >
+                {findContact().map(contact => (
+                    <li className={s.contactsItem} key={contact.id}>
+                        <p>{contact.name}: {contact.number}</p>
+                        <button type="button" id={contact.id} onClick={deleteContact}>
+                            Delete
+                        </button>
                     </li>
-                </ul>
-            ))}
+
+                ))}
+            </ul>
         </div>
     )
 }
+
+Contacts.propTypes = {
+    findContact: PropTypes.func.isRequired,
+    deleteContact: PropTypes.func.isRequired,
+};
 
 export default Contacts

@@ -16,15 +16,21 @@ class Form extends Component {
         this.setState({ name: '', number: '' });
     }
 
-    onSubmit = () => {
-        this.props.onSubmit()
+    onSubmit = (e) => {
+        e.preventDefault()
+        if (this.props.isThereThisContact(this.state.name)) {
+            alert(`${this.state.name} already exist`)
+            return
+        }
+
+        this.props.onSubmit(this.state)
         this.reset()
     }
 
     render() {
 
         return (
-            <div>
+            <form onSubmit={this.onSubmit}>
                 <h1>Phonebook</h1>
                 <div className={s.phonebookSection}>
                     <div className={s.phonebookForm}>
@@ -55,7 +61,7 @@ class Form extends Component {
                     </div>
                     <button type="submit" >Add contact</button>
                 </div >
-            </div >
+            </form >
         )
     }
 }
